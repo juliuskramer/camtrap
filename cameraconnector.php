@@ -17,7 +17,14 @@ $exposurecompensation;
 
 function getCamera() {
 	exec("gphoto2 --auto-detect", $answer);
-	$output = trim(explode("usb", $answer[count($answer) - 1]));
+	if (explode("usb", $answer[count($answer) - 1])){
+		$output = trim(explode("usb", $answer[count($answer) - 1]));
+	}
+	else {
+		$output ='Keine Kamera verbunden!'	
+	}
+	
+	
 	return $output;
 }
 
