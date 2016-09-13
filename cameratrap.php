@@ -5,12 +5,12 @@ include 'connectionhandler.php';
 include 'cameraconnector.php';
 
 //connection aufbauen
-connect();
+//connect();
 
 //Verbinde mit der Kamera
 echo getCamera();
 //download the files from the camera
-downloadImages();
+//downloadImages();
 //
 
 
