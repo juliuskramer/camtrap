@@ -21,7 +21,7 @@ function getCamera() {
 		$output = trim(explode("usb", $answer[count($answer) - 1]));
 	}
 	else {
-		$output ='Keine Kamera verbunden!'	
+		$output ='Keine Kamera verbunden!';	
 	}
 	
 	
