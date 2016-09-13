@@ -17,7 +17,7 @@ $exposurecompensation;
 
 function getCamera() {
 	exec("gphoto2 --auto-detect", $answer);
-	if (explode("usb", $answer[count($answer) - 1]) != false){
+	if (count($answer)>2){
 		$output = trim(explode("usb", $answer[count($answer) - 1]));
 	}
 	else {
